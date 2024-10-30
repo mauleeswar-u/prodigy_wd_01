@@ -1,0 +1,69 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40; 
+    padding: 1rem 2rem; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.navbar-brand {
+    color: rgb(0, 0, 0, 0.8); 
+    font-weight: 600; 
+    font-size: 1.25rem; 
+}
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0, 0.8); 
+    font-weight: 600; 
+    font-size: 1rem;
+    padding: 0.5rem 1rem; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00cc88; 
+    transition: color 0.3s ease-in-out; 
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link:focus {
+    color: #00cc88; 
+    font-weight: 600; 
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-brand i {
+    margin-right: 0.5rem; 
+    color: #00cc88; 
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 60px 0; 
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-brand, .navbar-nav .nav-link {
+        font-size: 1rem; 
+    }
+    .nav-link {
+        margin: 0;
+        padding-left: 0;
+    }
+}
